@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@600&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.body {
+    background-color: #E5E5E5;
+    height: 980px;
+    width: 414px;
+    margin-top: 0px;
+}
+
+.page {
+    height: 92px;
+    width: 414px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: rgba(207, 43, 43, 1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+    margin-left: 21px;
+    margin-top: 8px;
+    font-family: Righteous;
+    font-size: 44px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.text {
+    margin-left: 21px;
+    margin-top: 5px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+}
+
+.title-second {
+    background-color: #E5E5E5;
+    margin-left: 19px;
+    margin-top: 100px;
+    margin-bottom: 17px;
+    width: 395px;
+    height: 25px;
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 26px;
+    text-align: start;
+    color: #333333;
+}
+
+.title-second-page {
+    margin-left: 19px;
+    margin-top: 21px;
+    margin-bottom: 17px;
+    width: 395px;
+    height: 25px;
+    font-family: 'Righteous';
+    font-weight: 400;
+    font-size: 26px;
+    text-align: start;
+    color: #333333;
+}
+
+div.ex1 {
+    /*background:  #E5E5E5;*/
+    width: 395px;
+    overflow-x: scroll;
+}
+
+.menu {
+    margin-left: 19px;
+    margin-bottom: 16px;
+    width: 500px;
+    height: auto;
+    background: #E5E5E5;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.plate-of-food {
+    margin-right: 16px;
+    width: 162px;
+    height: 206px;
+    left: 19px;
+    top: 165px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 9px;
+    border: 5px solid rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.img-plate-of-food {
+    margin: 9px;
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
+
+.plate {
+    margin-left: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+}
+
+.description {
+    margin-left: 9px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #A6A6A6;
+}
+
+.price {
+    margin-left: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.select{
+    width: 414px;
+    height: 92px;
+    left: 0px;
+    bottom: 0px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.finalizar-pedido-text {
+    margin-top: 15px;
+    margin-left: 25px;
+    border-radius: 50px;
+    width: 364px;
+    height: 61px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: #CBCBCB;
+    
+}
