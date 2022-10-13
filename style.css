@@ -2,7 +2,7 @@
 
 .body {
     background-color: #E5E5E5;
-    height: 980px;
+    height: 930px;
     width: 414px;
     margin-top: 0px;
 }
@@ -38,11 +38,11 @@
 .title-second {
     background-color: #E5E5E5;
     margin-left: 19px;
-    margin-top: 100px;
+    margin-top: 96px;
     margin-bottom: 17px;
     width: 395px;
     height: 25px;
-    font-family: 'Righteous';
+    font-family: Righteous;
     font-weight: 400;
     font-size: 26px;
     text-align: start;
@@ -55,7 +55,7 @@
     margin-bottom: 17px;
     width: 395px;
     height: 25px;
-    font-family: 'Righteous';
+    font-family: Righteous;
     font-weight: 400;
     font-size: 26px;
     text-align: start;
@@ -102,7 +102,7 @@ div.ex1 {
 
 .plate {
     margin-left: 9px;
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -112,7 +112,7 @@ div.ex1 {
 
 .description {
     margin-left: 9px;
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -122,7 +122,7 @@ div.ex1 {
 
 .price {
     margin-left: 14px;
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -130,8 +130,8 @@ div.ex1 {
     color: #000000;
 }
 
-.select{
-    width: 414px;
+.select {
+    width: 415px;
     height: 92px;
     left: 0px;
     bottom: 0px;
@@ -154,5 +154,5 @@ div.ex1 {
     align-items: center;
     text-align: center;
     background: #CBCBCB;
-    
+
 }
