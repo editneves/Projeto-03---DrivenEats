@@ -154,7 +154,11 @@ function Finalizar() {
     if ((prato) && (bebida) && (sobremesa)) {
         document.getElementById("FinalizarPedido").style.background = "rgba(50, 183, 47, 1)";
         document.getElementById("FinalizarPedido").innerHTML = "Finalizar Pedido";
+        const elemento = document.querySelector(".finalizar-pedido-text");
+        elemento.classList.add("finalizar-pedido");
+
     }
+
 }
 
 function FinalizarPedido(){
