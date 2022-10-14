@@ -147,27 +147,21 @@ function EscolherPannaCotta() {
     Finalizar();
 }
 
+/*const paragrafo = document.querySelector(".finalizar-pedido-text");
+paragrafo.innerHTML = "Óla";*/
+
 function Finalizar() {
     if ((prato) && (bebida) && (sobremesa)) {
         document.getElementById("FinalizarPedido").style.background = "rgba(50, 183, 47, 1)";
-        document.getElementById("FinalizarPedido").innerHTML = "      Finalizar Pedido      ";
+        document.getElementById("FinalizarPedido").innerHTML = "Finalizar Pedido";
     }
 }
 
-//function FinalizarPedido() {
-//    let total = parseFloat(PrecoPrato + PrecoBebida + PrecoSobremesa).toFixed(2);
-//    mensagem =
-//        "\n Olá, gostaria de fazer o pedido:" +
-//        "\n- Prato:" + prato +
- //       "\n- Bebida:" + bebida +
- //       "\n- Sobremesa:" + sobremesa +
- //       "\n Total: R$" + total;
- //   console.log(mensagem)
- //   window.open("https://wa.me/+5561996184703?text=" + mensagem);
-//}
-
-
 function FinalizarPedido(){
+
+    const nome = prompt("Qual o seu nome?");
+    const endereco = prompt("Qual o seu endereço?");
+
     let total = parseFloat(PrecoPrato + PrecoBebida + PrecoSobremesa).toFixed(2);
 	var celular = "+5561996184703";
   
@@ -176,12 +170,15 @@ function FinalizarPedido(){
          "\n- Prato: " + prato +
          "\n- Bebida: " + bebida +
          "\n- Sobremesa: " + sobremesa +
-         "\n Total: R$ " + total;
+         "\n Total: R$ " + total +
+         "\n"+
+         "\n Nome: " + nome +
+         "\n Endereço: " + endereco 
 
   texto = window.encodeURIComponent(texto);
   
   window.open("https://api.whatsapp.com/send?phone=" + celular + "&text=" + texto, "_blank");
-	//Obs.. use "_system", no lugar de blank, caso você esteja usando Phonegap / Cordova / Ionic ou qualquer um baseado em webview;
+	// usar "_system", no lugar de blank, caso esteja usando Phonegap / Cordova / Ionic ou qualquer um baseado em webview;
 }
 
 
