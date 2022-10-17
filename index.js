@@ -1,3 +1,4 @@
+
 let prato;
 let bebida;
 let sobremesa;
@@ -6,10 +7,13 @@ let PrecoBebida;
 let PrecoSobremesa;
 let mensagem;
 
+
 // escolha da comida
 //remover os 3 primeiros carcteres da string mudar de ,para .  converter para numero
 function EscolherFrango() {
     document.getElementById("frango").style.border = "5px solid green";
+    //const element = document.getElementById('.frango');
+    //element.classList.remove("hide");
     document.getElementById("peixe").style.border = "5px solid rgba(255, 255, 255, 1)";
     document.getElementById("salada").style.border = "5px solid rgba(255, 255, 255, 1)";
     prato = "Frango Yin Yang";
@@ -147,42 +151,62 @@ function EscolherPannaCotta() {
     Finalizar();
 }
 
-/*const paragrafo = document.querySelector(".finalizar-pedido-text");
+/*const paragrafo = document.querySelector(".finalizar-order-text");
 paragrafo.innerHTML = "Óla";*/
 
 function Finalizar() {
+
     if ((prato) && (bebida) && (sobremesa)) {
-        document.getElementById("FinalizarPedido").style.background = "rgba(50, 183, 47, 1)";
-        document.getElementById("FinalizarPedido").innerHTML = "Finalizar Pedido";
-        const elemento = document.querySelector(".finalizar-pedido-text");
-        elemento.classList.add("finalizar-pedido");
-
+        document.getElementById("FinalizarOrder").style.background = "rgba(50, 183, 47, 1)";
+        document.getElementById("FinalizarOrder").innerHTML = "Finalizar Pedido";
+        const elemento = document.querySelector(".finalizar-order-text");
+        elemento.classList.add("finalizar-order");
     }
+}
+
+function FinalizarOrder() {
+    document.getElementById("confirmação").style.display = "block";
+    document.getElementById("confirmDish").innerHTML = prato;
+    document.getElementById("confirmDrink").innerHTML = bebida;
+    document.getElementById("confirmDessert").innerHTML = sobremesa;
+    document.getElementById("PricePrato").innerHTML = (parseFloat(PrecoPrato).toFixed(2)).replace(".", ",");
+    document.getElementById("PriceBebida").innerHTML = (parseFloat(PrecoBebida).toFixed(2)).replace(".", ",");
+    document.getElementById("PriceSobremesa").innerHTML = (parseFloat(PrecoSobremesa).toFixed(2)).replace(".", ",");
+    document.getElementById("PriceTotal").innerHTML = (parseFloat(PrecoPrato + PrecoBebida + PrecoSobremesa).toFixed(2)).replace(".", ",");
+}
+
+function Cancelar() {
+    document.getElementById("confirmação").style.display = "none";
 
 }
 
-function FinalizarPedido(){
+function confirmOrder() {
 
-    const nome = prompt("Qual o seu nome?");
-    const endereco = prompt("Qual o seu endereço?");
+    if ((prato) && (bebida) && (sobremesa)) {
+        const nome = prompt("Qual o seu nome?");
+        const endereco = prompt("Qual o seu endereço?");
 
-    let total = parseFloat(PrecoPrato + PrecoBebida + PrecoSobremesa).toFixed(2);
-	var celular = "+5561996184703";
-  
-  var texto =  
-         "\n Olá, gostaria de fazer o pedido: " +
-         "\n- Prato: " + prato +
-         "\n- Bebida: " + bebida +
-         "\n- Sobremesa: " + sobremesa +
-         "\n Total: R$ " + total +
-         "\n"+
-         "\n Nome: " + nome +
-         "\n Endereço: " + endereco 
+        let total = (parseFloat(PrecoPrato + PrecoBebida + PrecoSobremesa).toFixed(2)).replace(".", ",");
 
-  texto = window.encodeURIComponent(texto);
-  
-  window.open("https://api.whatsapp.com/send?phone=" + celular + "&text=" + texto, "_blank");
-	// usar "_system", no lugar de blank, caso esteja usando Phonegap / Cordova / Ionic ou qualquer um baseado em webview;
+        var celular = "+5561996184703";
+
+        var texto =
+            "\n Olá, gostaria de fazer o pedido: " +
+            "\n- Prato: " + prato +
+            "\n- Bebida: " + bebida +
+            "\n- Sobremesa: " + sobremesa +
+            "\n Total: R$ " + total +
+            "\n" +
+            "\n Nome: " + nome +
+            "\n Endereço: " + endereco
+
+        texto = window.encodeURIComponent(texto);
+
+        window.open("https://api.whatsapp.com/send?phone=" + celular + "&text=" + texto, "_blank");
+        // usar "_system", no lugar de blank, caso esteja usando Phonegap / Cordova / Ionic ou qualquer um baseado em webview;
+    }
+    else {
+        let.FinalizarOrder = document.querySelector("FinalizarOrder"); button.disabled = true;
+    }
 }
-
 

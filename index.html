@@ -25,21 +25,28 @@
                 <img src="./assests/frango_yin_yang 1.jpg" class="img-plate-of-food" />
                 <p class="plate">Frango Yin Yang </p>
                 <p class="description">Um pouco de batata, um pouco de salada </p>
-                <p id="price-frango" class="price">R$ 35,00 </p>
+                <p id="price-frango" class="price"> R$ 35,00
+                    <ion-icon name="checkmark-circle" class="icon hide"></ion-icon>
+                </p>
+
             </div>
 
             <div id="peixe" class="plate-of-food" onclick="EscolherPeixe()">
                 <img src="./assests/peixe.jfif" class="img-plate-of-food" />
                 <p class="plate">Peixe Assado </p>
                 <p class="description">Delicioso peixe assado com batatas</p>
-                <p id="price-peixe" class="price">R$ 60,00 </p>
+                <p id="price-peixe" class="price">R$ 60,00 <ion-icon name="checkmark-circle" class="icon hide">
+                    </ion-icon>
+                </p>
             </div>
 
             <div id="salada" class="plate-of-food" onclick="EscolherSalada()">
                 <img src="./assests/salada.jfif" class="img-plate-of-food" />
                 <p class="plate">Salada Tropical </p>
                 <p class="description"> Salada com legumes e frutas</p>
-                <p id="price-salada" class="price">R$ 25,00 </p>
+                <p id="price-salada" class="price">R$ 25,00 <ion-icon name="checkmark-circle" class="icon hide">
+                    </ion-icon>
+                </p>
             </div>
 
         </div>
@@ -99,14 +106,42 @@
         </div>
 
         <div class="select">
-            <p id="FinalizarPedido" class="finalizar-pedido-text" onclick="FinalizarPedido()"> Selecione os 3 itens
+            <p id="FinalizarOrder" class="finalizar-order-text" onclick="FinalizarOrder()"> Selecione os 3 itens
                 para fechar o pedido
             </p>
 
         </div>
 
-    </div>
 
+        <div class="confirmação" id="confirmação" style="display:none;" class="answer_list">
+            <p class="confirm-text"> Confirme seu pedido </p>
+
+            <div class="div">
+                <div class="confirm-order">
+                    <p id="confirmDish" class="paragrafo"> </p>
+                    <p id="confirmDrink" class="paragrafo"> </p>
+                    <p id="confirmDessert" class="paragrafo"> </p>
+                    <p id="confirmTotal" class="paragrafo"> Total: </p>
+                </div>
+
+                <div class="confirm-price">
+                    <p id="PricePrato" class="paragrafo"> </p>
+                    <p id="PriceBebida" class="paragrafo"> </p>
+                    <p id="PriceSobremesa" class="paragrafo"> </p>
+                    <p id="PriceTotal" class="paragrafo"> </p>
+                </div>
+            </div>
+
+
+            <div id="confirm" class="confirm" onclick="confirmOrder()">
+                <p> Tudo certo, pode pedir! </p>
+            </div>
+            <p class="cancelar" onclick="Cancelar()"> Cancelar </p>
+
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 
 </html>

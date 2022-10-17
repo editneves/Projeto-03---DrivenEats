@@ -100,6 +100,15 @@ div.ex1 {
     border-radius: 4px;
 }
 
+.hide {
+    display: none;
+}
+
+.icon {
+    margin-left: 50px;
+    color: #50D074;
+}
+
 .plate {
     margin-left: 9px;
     font-family: Roboto;
@@ -141,7 +150,7 @@ div.ex1 {
     position: fixed;
 }
 
-.finalizar-pedido-text {
+.finalizar-order-text {
     margin-top: 15px;
     margin-left: 25px;
     border-radius: 50px;
@@ -156,7 +165,7 @@ div.ex1 {
     background: #CBCBCB;
 }
 
-.finalizar-pedido{
+.finalizar-order {
     margin-top: 15px;
     margin-left: 25px;
     border-radius: 50px;
@@ -169,4 +178,103 @@ div.ex1 {
     align-items: center;
     text-align: center;
     justify-content: center
+}
+
+.confirmação {
+    width: 377px;
+    height: 353px;
+    left: 19px;
+    top: 310px;
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    position: absolute;
+
+}
+
+.confirm-text {
+    width: 376px;
+    height: 27px;
+    margin-left: 19px;
+    margin-top: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.div {
+    display: flex;
+}
+
+.confirm-price {
+    width: 97px;
+    height: 150px;
+    margin-left: 25px;
+    margin-top: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 26px;
+    text-align: right;
+    letter-spacing: 0.018em;
+}
+
+.paragrafo {
+    margin-bottom: 13px;
+}
+
+.confirm-order {
+    width: 190px;
+    height: 170px;
+    margin-left: 26px;
+    margin-top: 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+}
+
+.confirm {
+    width: 329px;
+    height: 52px;
+    margin-left: 24px;
+    margin-bottom: 1px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancelar {
+    width: 367px;
+    height: 53px;
+    margin-bottom: 1px;
+    margin-left: 5px;
+    background: #50D074;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
 }
